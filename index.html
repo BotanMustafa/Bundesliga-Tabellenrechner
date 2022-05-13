@@ -4,13 +4,347 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Bundesliga-Tabellenrechner</title>
     <script defer src="./build/bundle.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-    <my-beispiel></my-beispiel>
-    <input type="text" id="myInput" />
+    <header>
+        <div class="container">
+            <img src="img/Bundesliga-logo.webp">
+            <h1>Bundesliga-Tabellenrechner</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="spieluebersicht">
+                <div id="ergebniseingabe">
+                    <h2>SPIELPAARUNGEN</h2>
+
+
+                    <div id="spiel1" class="spiel">
+                        <div id="borussia-dortmund" class="spieler1">
+                            <div class="spieler-name">
+                                Dortmund
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/BVB.png" alt="Dortmund Logo" width="40px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="hertha-bsc" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/hertha.png" alt="Hertha Logo" width="40px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Hertha
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel2" class="spiel">
+                        <div id="vfl-wolfsburg" class="spieler1">
+                            <div class="spieler-name">
+                                Wolfsburg
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/wolfsburg.png" alt="Wolfsburg Logo" width="40px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="bayern-muenchen" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Bayern.png" alt="Bayern Logo" width="40px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Bayern
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel3" class="spiel">
+                        <div id="bayer-leverkusen" class="spieler1">
+                            <div class="spieler-name">
+                                Leverkusen
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Leverkusen.png" alt="Leverkusen Logo" width="50px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="sc-freiburg" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Freiburg.png" alt="Freiburg Logo" width="40px" height="50px">
+                            </div>
+                            <div class="spieler-name">
+                                Freiburg
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel4" class="spiel">
+                        <div id="union-berlin" class="spieler1">
+                            <div class="spieler-name">
+                                Union
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Union.png" alt="Union Logo" width="60px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="vfl-bochum" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Bochum.png" alt="Bochum Logo" width="40px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Bochum
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel5" class="spiel">
+                        <div id="mönchengladbach" class="spieler1">
+                            <div class="spieler-name">
+                                Gladbach
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Gladbach.png" alt="Gladbach Logo" width="40px" height="50px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="tsg-hoffenheim" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Hoffenheim.png" alt="Hoffenheim Logo" width="35px" height="40px">
+                            </div>
+                            <div  class="spieler-name">
+                                Hoffenheim
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel6" class="spiel">
+                        <div id="vfb-stuttgart" class="spieler1">
+                            <div class="spieler-name">
+                                Stuttgart
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Stuttgart.png" alt="Stuttgart Logo" width="40px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="fc-köln" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Koeln.png" alt="Köln Logo" width="40px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Köln
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel7" class="spiel">
+                        <div id="fsv-mainz" class="spieler1">
+                            <div class="spieler-name">
+                                Mainz
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Mainz.png" alt="Mainz Logo" width="40px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="eintacht-frankfurt" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Frankfurt.png" alt="Frankfurt Logo" width="40px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Frankfurt
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel8" class="spiel">
+                        <div id="fc-augsburg" class="spieler1">
+                            <div class="spieler-name">
+                                Augsburg
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Augsburg.png" alt="Augsburg Logo" width="40px" height="45px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="greuther-fürth" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/Fuerth.png" alt="Fürth Logo" width="40px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Fürth
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="spiel9" class="spiel">
+                        <div id="arminia-bielefeld" class="spieler1">
+                            <div class="spieler-name">
+                                Bielefeld
+                            </div>
+                            <div class="spieler-logo">
+                                <img src="img/Bielefeld.png" alt="Bielefeld Logo" width="40px" height="40px">
+                            </div>
+                        </div>
+                        <div class="ergebnis">
+                            <div class="sp1-menu">
+                                <span class="sp1-plus menu-btn">+</span>
+                                <span class="sp1-minus menu-btn">–</span>
+                            </div>
+                            <div class="spielergebnis">
+                                <span class="sp1-ergebnis">0</span>
+                                <span>:</span>
+                                <span class="sp2-ergebnis">0</span>
+                            </div>
+                            <div class="sp2-menu">
+                                <span class="sp2-plus menu-btn">+</span>
+                                <span class="sp2-minus menu-btn">–</span>
+                            </div>
+                        </div>
+                        <div id="rb-leipzig" class="spieler2">
+                            <div class="spieler-logo">
+                                <img src="img/RedBull.png" alt="RedBull Logo" width="50px" height="40px">
+                            </div>
+                            <div class="spieler-name">
+                                Leipzig
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            Bundesliga-Tabellenrechner von Botan Mustafa
+        </div>
+    </footer>
 </body>
 
 </html>
