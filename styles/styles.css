@@ -1,0 +1,209 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+
+.container{
+    width: 90%;
+    max-width: 1180px;
+    margin:0 auto;
+}
+
+header{
+    border-bottom: 1px solid #ddd;
+}
+
+header .container{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+  
+header img{
+    width: 100px;
+    height: auto;
+}
+
+header h1{
+    margin:0;
+    font-size: 28px;
+}
+
+
+
+main{
+    padding-bottom: 20px;
+}
+
+main h2{
+    font-size: 18px;
+    margin:0 0 30px;
+}
+
+.spieluebersicht{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.spieluebersicht #ergebniseingabe{
+    width: 50%;
+    padding-top: 30px;
+    padding-right: 30px;
+    border-right: 1px solid #ddd;
+    padding-bottom: 50px;
+}
+
+.spieluebersicht .tabelle{
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+
+.spieluebersicht .tabelle table{
+    border-spacing: 0;
+    font-size: 13px;
+}
+
+.spieluebersicht .tabelle table td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.spieluebersicht .tabelle table thead td{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    font-weight: 600;
+}
+
+.spieluebersicht .tabelle table tbody td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.spieluebersicht .tabelle table tbody td.vereine{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.spieluebersicht .tabelle table td.vereine img{
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.spieluebersicht .tabelle table td.vereine .verein-name{
+    font-weight: 600;
+}
+
+.spieluebersicht .tabelle table tbody td.platz{
+    font-weight: 600;
+    text-align: right;
+}
+
+.spieluebersicht .tabelle table tbody td.spiele,
+.spieluebersicht .tabelle table tbody td.tore,
+.spieluebersicht .tabelle table tbody td.differenz,
+.spieluebersicht .tabelle table tbody td.punkte{
+    color: #555;
+}
+
+.spieluebersicht .tabelle table td.punkte .startpunkte,
+.spieluebersicht .tabelle table td.tore .startergebnis{
+    display: none;
+}
+
+
+
+
+
+
+.spiel{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.spiel + .spiel{
+    margin-top: 15px;
+}
+
+.spiel .spieler1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+}
+
+.spiel .spieler2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+
+.spiel .spieler1 .spieler-name{
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.spiel .spieler2 .spieler-name{
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.spiel .spieler1 .spieler-logo,
+.spiel .spieler2 .spieler-logo{
+
+}
+
+.spiel .ergebnis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.spiel .ergebnis .sp1-menu,
+.spiel .ergebnis .sp2-menu{
+    
+}
+
+.spiel .ergebnis .sp1-menu .sp1-plus,
+.spiel .ergebnis .sp2-menu .sp2-plus{
+    display: block;
+}
+
+.spiel .ergebnis .sp1-menu .sp1-minus,
+.spiel .ergebnis .sp2-menu .sp2-minus{
+    display: block;
+}
+
+.spiel .ergebnis .menu-btn{
+    background-color: #ddd;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 24px;
+}
+
+.spiel .spielergebnis{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #250e0e;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
